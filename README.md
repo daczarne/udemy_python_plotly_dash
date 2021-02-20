@@ -8,4 +8,4 @@
 ![github languages](https://img.shields.io/github/languages/count/daczarne/udemy_python_plotly_dash)
 ![top language](https://img.shields.io/github/languages/top/daczarne/udemy_python_plotly_dash)
 
-Notes on Udemy's course on building interactive dashboard with Plotly's Dash framework for Python.
+Notes on **Just into Data**'s Udemy course on building interactive dashboard with Plotly's Dash framework for Python.
