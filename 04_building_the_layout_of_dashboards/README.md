@@ -18,3 +18,7 @@ import dash_core_components as dcc
 ```
 
 It contains things like `dcc.Dropdown` menus, or `dcc.RadioItems`. I also allows us to add `dcc.Graph` elements where we can use `Plotly`'s Python bindings to include plots and maps into out dashboard. Lastly, it also contains all user facing components such as `dcc.Input` for text input boxes, `dcc.Slder` and `dcc.RangeSlder` for selectors, and much more.
+
+---
+
+The `dcc.RadioItems` element takes two arguments: `options`, and `value`. `options` is usually a list of `dicts` with keys called *label* and *value*. The *label* is what will be displayed on the fron end and the user can interact with. The *value* is the computed value. The second argument is called `value` and it's the default value that will be used when the dashboard is loaded.
