@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 numpy = "*"
 pandas = "*"
+plotly = "*"
+dash = "*"
 
 [dev-packages]
 
