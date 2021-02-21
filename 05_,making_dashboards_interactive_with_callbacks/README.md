@@ -1,5 +1,7 @@
 # Callbacks
 
+## Introduction
+
 Callback functions are Python functions and can thus be defined as such. The main difference is that they are **decorated** functions. This funtions will be automatically called by Python when an input's component property changes. Their goal is to update an output component.
 
 !["callbacks](callbacks.png)
@@ -22,6 +24,8 @@ Before using a component in a callback function we need to declare it in the app
 
 !["input and output"](input-output.png)
 
+## Multiple IOs
+
 Callbacks can have more than one input and output objects
 
 ``` python
@@ -40,4 +44,6 @@ def function_name(input_id1, input_id2, input_id3):
   return output1, output2, output3
 ```
 
-Just keep in mind that the order in which you specify the inputs in the function needs to the be the same order as they are defined in the decorator. There doesn't need to be the same number of inputs and outputs.
+Just keep in mind that the order in which you specify the inputs in the function needs to the be the same order as they are defined in the decorator. Similarly, the order in which declare the outputs in the decorator needs to be the same as the order in which you pass them to the return statement. There doesn't need to be the same number of inputs and outputs.
+
+## Chaining IOs
