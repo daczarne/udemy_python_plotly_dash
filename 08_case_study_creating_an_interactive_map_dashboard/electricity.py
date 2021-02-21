@@ -1,7 +1,9 @@
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
+import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
+import dash_table
 import pandas as pd
 import plotly.express as px
 
@@ -23,7 +25,7 @@ map_fig = px.choropleth(
 )
 
 # Instanciate app
-app = dash.Dash()
+app = dash.Dash(external_stylesheets=[dbc.themes.SOLAR])
 
 # Define layout
 app.layout = html.Div([
@@ -38,6 +40,11 @@ app.layout = html.Div([
     dcc.Graph(
         id="map-graph",
         figure=map_fig
+    ),
+    dash_table.DataTable(
+        id="price-info",
+        columns=[{"name": col, "id": col} for col in ELECTRICITY.columns],
+        data=ELECTRICITY.to_dict("records")
     )
 ])
 
