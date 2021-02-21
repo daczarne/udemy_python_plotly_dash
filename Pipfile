@@ -8,10 +8,11 @@ numpy = "*"
 pandas = "*"
 plotly = "*"
 dash = "*"
-nbformat = "*"
-ipykernel = "*"
 
 [dev-packages]
+nbformat = "*"
+ipykernel = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.9"
