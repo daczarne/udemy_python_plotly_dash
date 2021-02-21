@@ -16,7 +16,7 @@ We can also include custom CSS or JavaScript in our Dash apps. We just need to c
 
 ## Grid layout
 
-We can use CSS-Grid in Dash. The two main layout components are: 
+We can use CSS-Grid in Dash. The two main layout components are:
 
 - `Row`: container for columns
 
