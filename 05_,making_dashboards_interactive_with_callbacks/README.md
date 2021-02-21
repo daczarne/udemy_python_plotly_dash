@@ -21,3 +21,23 @@ def function_name(input_argument_name):
 Before using a component in a callback function we need to declare it in the app layout. We need to give it a unique name (its ID).
 
 !["input and output"](input-output.png)
+
+Callbacks can have more than one input and output objects
+
+``` python
+# Function decorator (Outputs first)
+@app.callback(
+  Output(output_id1, output_property1),
+  Output(output_id2, output_property2),
+  Output(output_id3, output_property3),
+  Input(input_id1, input_property1)
+  Input(input_id2, input_property2)
+  Input(input_id3, input_property3)
+)
+# Function
+def function_name(input_id1, input_id2, input_id3):
+  # Function body
+  return output1, output2, output3
+```
+
+Just keep in mind that the order in which you specify the inputs in the function needs to the be the same order as they are defined in the decorator. There doesn't need to be the same number of inputs and outputs.
