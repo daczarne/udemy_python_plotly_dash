@@ -12,4 +12,4 @@ We can also user Bootstrap by importing the `dash_bootstrap_components as dbc` m
 
 ## Custom CSS
 
-We can also include custom CSS or JavaScript in our Dash apps. We just need to create a folder named `assets` in the root of our app directory and include our CSS and JavaScript files in that folder. Dash will automatically serve all of the files that are included in this folder. By default the URL to request the assets will be `/assets` but we can customize this with the `assets_url_path` argument to `dash.Dash` constructor.
+We can also include custom CSS or JavaScript in our Dash apps. We just need to create a folder named `assets` in the root of our app directory and include our CSS and JavaScript files in that folder. Dash will automatically serve all of the files that are included in this folder. By default the URL to request the assets will be `/assets` but we can customize this with the `assets_url_path` argument to `dash.Dash(__name__)` constructor.
