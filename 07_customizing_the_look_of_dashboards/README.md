@@ -40,3 +40,5 @@ dbc.Row([
   dbc.Col(html.Div("Col 2 of 2"))
 ])
 ```
+
+If we only want to use grid but specific theme (or a custom one) we need to specify `dash.Dash(external_stylesheets=[dbc.themes.GRID])`.
